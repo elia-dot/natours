@@ -8,9 +8,12 @@ const {
   getLoginForm,
   getAccount,
   getTours,
+  alerts,
 } = require('../controllers/viewsController');
 
 const router = express.Router();
+
+router.use(alerts);
 
 router.get('/', isLoggedIn, getOverview);
 
