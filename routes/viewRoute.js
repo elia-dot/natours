@@ -12,7 +12,7 @@ const {
 
 const router = express.Router();
 
-router.get('/', createBookingCheckout, isLoggedIn, getOverview);
+router.get('/', isLoggedIn, getOverview);
 
 router.get('/tour/:slug', isLoggedIn, getTour);
 router.get('/login', isLoggedIn, getLoginForm);
