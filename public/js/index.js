@@ -64,5 +64,3 @@ if (bookBtn)
     bookTour(tourId);
   });
 
-const alertMsg = document.querySelector('body').dataset.alert;
-if (alert.message) showAlert('success', alertMsg, 20);
