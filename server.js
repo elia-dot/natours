@@ -36,9 +36,9 @@ process.on('unhandledRejection', (err) => {
   });
 });
 
-// process.on('SIGTERM', () => {
-//   console.log('SIGTERM RECEIVED. shutting down');
-//   server.close(() => {
-//     console.log('Peocess terminated!');
-//   });
-// });
+process.on('SIGTERM', () => {
+  console.log('SIGTERM RECEIVED. shutting down');
+  server.close(() => {
+    console.log('Peocess terminated!');
+  });
+});
