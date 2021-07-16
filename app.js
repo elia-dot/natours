@@ -27,8 +27,7 @@ app.enable('trust proxy')
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(cors())
-app.options('http://localhost:3000', cors())
+app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
