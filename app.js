@@ -28,7 +28,7 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(cors())
-app.options('*', cors())
+app.options('http://localhost:3000', cors())
 
 app.use(express.static(path.join(__dirname, 'public')));
 
