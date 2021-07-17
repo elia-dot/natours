@@ -27,7 +27,7 @@ app.enable('trust proxy')
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+app.use(cors({credentials: true, origin: 'https://youthful-lovelace-ea87c7.netlify.app/'}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
